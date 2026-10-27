@@ -1,0 +1,9 @@
+title: 社交军师
+lang: zh-CN
+url: https://jywang001.github.io
+baseurl: /social-copilot-public-pages
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: null
+exclude: []

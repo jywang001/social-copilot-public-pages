@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>{{ page.title | escape }} · 社交军师</title>
+  <meta name="description" content="{{ page.description | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="site-header">
+    <a class="brand" href="{{ '/' | relative_url }}"><span class="mark" aria-hidden="true">社</span>社交军师</a>
+    <nav aria-label="文档导航">
+      <a href="{{ '/' | relative_url }}"{% if page.kind == 'support' %} aria-current="page"{% endif %}>支持</a>
+      <a href="{{ '/privacy/' | relative_url }}"{% if page.kind == 'privacy' %} aria-current="page"{% endif %}>隐私政策</a>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <div class="eyebrow">SOCIAL COPILOT</div>
+    {{ content }}
+  </main>
+  <footer>
+    <p>运营者：王俊阳 · <a href="mailto:jywang001@icloud.com">jywang001@icloud.com</a></p>
+    <p>此站仅提供隐私政策与支持说明，不接收聊天或登录凭据。</p>
+  </footer>
+</body>
+</html>
